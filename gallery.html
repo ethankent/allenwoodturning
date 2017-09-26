@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+     <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="all" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./css/jgallery.min.css" />
+    
+    <script type="text/javascript" src="./js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="./js/tinycolor-0.9.16.min.js"></script>
+    <script type="text/javascript" src="./js/jgallery.min.js"></script>
+    <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+   
+
+    <script type="text/javascript">
+    
+	$( function() {
+        $( '#gallery' ).jGallery( {
+            'mode': 'standard'
+        } );
+    } );
+    </script>
+<title>Allen Wood Turning My Gallery</title>
+	
+
+
+<style type="text/css">
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(images/global/birch_background3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left top;
+	
+}
+.header{
+	height: 249px;
+	width: 1000px;
+	text-align: center;
+	position: relative;
+	margin-top: 0px;
+	background-color: #404040;
+	
+}
+  .header h1 {
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: 0px 0px 5px #000;
+	font-size: 50px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-family: "Times New Roman", Times, serif;
+	line-height: normal;
+	z-index: 1;
+	position: relative;
+  }
+.header h2 {
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: 0px 0px 8px #000;
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: "Times New Roman", Times, serif;
+	line-height: normal;
+	position: relative;
+	z-index: 1;
+}
+
+
+.navigation{
+	background-color: #AA9FAA;
+	height: 43px;
+	border-top: 4px solid #553F55;
+	border-bottom: 4px solid #553F55;
+	
+}
+#map{
+    position: absolute;
+    top:300px;
+    right:-10px;
+
+    z-index:-10;
+    height:300px;
+
+    width:350px;
+
+}
+#closemap{
+
+font-size:12px;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+a:link {
+	color: blue;
+	text-decoration: underline;
+	 background-color:#ffffff;
+	 border:solid 2px #000000;
+	
+}
+
+a:visited {
+	color: #000000;
+	text-decoration: underline;
+	 background-color:#ffffff;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	border:none;
+	background-color: #555f55;
+	color: #ffffff;
+	border:solid 2px #ffffff;
+	
+}
+
+
+.container {
+	width: 1000px;
+	height: auto;
+	background-color: #FFFFFF;
+	margin: auto; 
+	border: 6px double #553F55;
+	position: relative;
+	box-shadow: 10px 10px 10px #000;
+}
+
+
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	padding: 10px 0;
+    background-color: #ffffff;	
+	height:auto;
+}
+.content p {
+font-weight:bold;
+
+}
+
+.content h2 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 0px;
+	text-align:center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+ #image1{
+	width: 850px;
+	height: 459px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
+	margin-bottom: 0px;
+ }
+ 
+.description {
+	margin-right: 25px;
+	margin-left: 25px;
+	border: 5px solid #000000;
+	border-radius: 100px;
+	box-shadow: 10px 10px 10px #000;
+	position: relative;
+	padding-top: 20px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+.description h3 {
+font-weight:bold;
+font-size:24px;
+text-align:center;
+}
+
+#bowl{
+	position: absolute;
+	bottom: 5px;
+	left: 375px;
+	z-index: 0;
+}
+#spoon{
+    position: absolute;
+	bottom: 50px;
+	left: 10px;
+	z-index: 0;
+	
+}
+#candleholder{
+    position: absolute;
+	bottom: 25px;
+	right: 10px;
+	z-index: 0;
+	
+}
+#footer{
+	position :relative;
+	border-top: 4px solid #553F55;
+	text-align:center;
+    background-color:#AA9FAA;	
+    width:auto;
+	line-height:14px;
+}
+#ad{
+	font-size: 11px;
+	position: absolute;
+	top: 55px;
+	right: 10px;
+	margin: 0px;
+	padding:0px;
+}
+
+#ad a:link {
+background-color: #AA9FAA;	
+border:none;
+color:#0000FF;
+}
+
+#ad a:visited{ 
+background-color: #AA9FAA;	
+border:none;
+color:#0000FF;
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+ 
+  <div id="map">
+
+      <input type="button" value="Close Map"
+      onclick="document.getElementById('map').style.zIndex =-10;"
+      onmouseover="this.style.backgroundColor='#555f55';this.style.color='#ffffff';return true;"
+      onmouseout="this.style.backgroundColor='#ffffff';this.style.color='#000000';return true;">
+
+
+ <iframe style = "width:325px; height:300px; border:none; margin:0px;" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=106+West+Water+Street,+Saint+Paul,+MN&amp;aq=0&amp;oq=106&amp;sll=46.44186,-93.36129&amp;sspn=13.631116,33.815918&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=106+W+Water+St,+St+Paul,+Minnesota+55107&amp;z=14&amp;ll=44.938234,-93.093455&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=106+West+Water+Street,+Saint+Paul,+MN&amp;aq=0&amp;oq=106&amp;sll=46.44186,-93.36129&amp;sspn=13.631116,33.815918&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=106+W+Water+St,+St+Paul,+Minnesota+55107&amp;z=14&amp;ll=44.938234,-93.093455" target="_blank" style=";text-align:left">View Larger Map</a></small>
+
+
+  </div><!-- map -->
+
+
+
+
+
+  
+  <div class = "header"><br><br>
+    <img src="images/gallery/bowl2.jpg" width="250" height="141" id= "bowl" alt="Bowl">
+    <img src="images/gallery/spoon.png" width="208" height="130" id= "spoon" alt="wood spoon">
+    
+    <img src="images/gallery/holder.JPG" width= "204" height= "180" id= "candleholder" alt= "Candle holder">
+<h1> Allen Woodturning<br>
+
+Saint Paul, MN</h1><br>
+<h2> My Gallery</h2>
+</div>
+
+  <div class="navigation">
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="#" onclick= "document.getElementById('map').style.zIndex =10;">Location</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+    </ul>
+</div><!-- navigation -->
+  <div class="content">
+   <h2>Click thumbnails to navigate my gallery</h2>
+  <div style="padding: 00px 0; width: 960px; margin: 0 auto; height: auto; border-top: solid 3px #000000; ">
+        <div id="gallery">
+            <div class="album" >
+                   <h1>Allen Woodturning Gallery</h1>
+                   <a href="galleryimages/image1.jpg"><img src="galleryimages/thumb1.jpg" alt="01. Red Elm bowl with Cherry spoon 9.5&#8221; W x 5.25&#8221; H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF"   /> </a>
+                   <a href="galleryimages/image2.jpg"><img src="galleryimages/thumb2.jpg" alt="02. Birch bowl 5.25&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image3.jpg"><img src="galleryimages/thumb3.jpg" alt="03. American Elm bowl 5.25&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image4.jpg"><img src="galleryimages/thumb4.jpg" alt="04. Paper Birch bowl 6.25&#8221;W x 2&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image5.jpg"><img src="galleryimages/thumb5.jpg" alt="05. Black Cherry bowl 6.5&#8221;W x 2.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image6.jpg"><img src="galleryimages/thumb6.jpg" alt="06. Hard Maple bowl 6.25&#8221;W x 2.75&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image7.jpg"><img src="galleryimages/thumb7.jpg" alt="07. Silver Maple bowl 7&#8221;W x 3.25&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image8.jpg"><img src="galleryimages/thumb8.jpg" alt="08. Cherry shot glass 2&#8221;W x 4&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image9.jpg"><img src="galleryimages/thumb9.jpg" alt="09. Cherry cup 2&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image10.jpg"><img src="galleryimages/thumb10.jpg" alt="10. Buckthorn shot glass 1.5&#8221;W x 3&#8221;H&#8211; Spalt Maple goblet 2.25&#8221;W x 5.75&#8221;H&#8211; Birch pinch bowl 3&#8221;W x 1.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image11.jpg"><img src="galleryimages/thumb11.jpg" alt="11. Birch bowl 6.5&#8221;W x 2.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image12.jpg"><img src="galleryimages/thumb12.jpg" alt="12. Cherry bowl 6&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image13.jpg"><img src="galleryimages/thumb13.jpg" alt="13. Boxelder bowl 8.25&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image14.jpg"><img src="galleryimages/thumb14.jpg" alt="14. Black Cherry bowl 7&#8221;W x 2.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image15.jpg"><img src="galleryimages/thumb15.jpg" alt="15. Black Cherry bowl 6.75&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image16.jpg"><img src="galleryimages/thumb16.jpg" alt="16. Hard Maple bowl 8.25&#8221;W x 2.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image17.jpg"><img src="galleryimages/thumb17.jpg" alt="17. Black Cherry bowl 6.25&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image18.jpg"><img src="galleryimages/thumb18.jpg" alt="18. Hard Maple platter 9&#8221;W x 1.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image19.jpg"><img src="galleryimages/thumb19.jpg" alt="19. Birch bowl 6.5&#8221;W x 3&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image20.jpg"><img src="galleryimages/thumb20.jpg" alt="20. River Birch bowl 8&#8221;W x 2.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image21.jpg"><img src="galleryimages/thumb21.jpg" alt="21. Birch bowl 7.25&#8221;W x 2&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image22.jpg"><img src="galleryimages/thumb22.jpg" alt="22. Buckthorn spoon 4&#8221;L"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                  <a href="galleryimages/image23.jpg"><img src="galleryimages/thumb23.jpg" alt="23. Cherry spoon 3.75&#8221;L"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image24.jpg"><img src="galleryimages/thumb24.jpg" alt="24. Cherry butter paddle 6&#8221;L"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image25.jpg"><img src="galleryimages/thumb25.jpg" alt="25. Black Cherry bowl 6.75&#8221;W x 3.75&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image26.jpg"><img src="galleryimages/thumb26.jpg" alt="26. Hard Maple bowl 6.5&#8221;W x 2.75&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href= "galleryimages/image27.jpg"><img src="galleryimages/thumb27.jpg" alt="27. Cherry spoon 8.5&#8221;L"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image28.jpg"><img src="galleryimages/thumb28.jpg" alt=" 28. Red Bud bowl 4.75&#8221;W x 1.75&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image29.jpg"><img src="galleryimages/thumb29.jpg" alt="29. Birch bowl 6.75&#8221;W x 2&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image30.jpg"><img src="galleryimages/thumb30.jpg" alt="30. Silver Maple bowl 8&#8221;W x 3.5&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                   <a href="galleryimages/image31.jpg"><img src="galleryimages/thumb31.jpg" alt="31. Black Ash 6&#8221;W x 2.75&#8221;H"  data-jgallery-bg-color="#0A0703" data-jgallery-text-color="#FFFFFF" /></a>
+                                   
+               </div><!-- album -->
+            
+            
+               
+           </div> <!--gallery  -->
+    
+    </div><!-- style -->
+	</div><!-- end .content -->
+  
+  <div id ="footer">
+     <p style= "margin-bottom : 0px; color:#000; font-size:11px;">
+     Allen Woodturning<br>   
+     ACVR Warehouse,<br>106 Water Street W., St. Paul, MN 55107<br>
+     phone - 651-233-9367    
+     email - <a href="mailto:allen.mary69@gmail.com" style="background-color:#AA9FAA; border:none;">allen.mary69@gmail.com </a><br>             
+	   <!-- #BeginDate format:Am1 -->April 7, 2016<!-- #EndDate -->
+     </p>
+     <div id= "ad"> <p>Web Design by <a href="http://www.kennyswebs.com" target="_blank" >Kennys Webs</a></p> </div><!-- end ad -->
+  </div><!-- end footerr -->
+  </div><!-- end .container -->
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
